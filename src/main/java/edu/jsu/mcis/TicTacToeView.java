@@ -27,7 +27,7 @@ public class TicTacToeView {
     public void showNextMovePrompt() {
 
         /* Display a prompt for the player's next move (see examples) */
-		System.out.println("Player 1" "(MARK)" "Move:");
+		System.out.println("Move:");
 		System.out.print("Enter the row and column numbers, separated by a space: ");
         /* INSERT YOUR CODE HERE */
 
