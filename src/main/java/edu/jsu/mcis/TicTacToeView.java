@@ -27,9 +27,8 @@ public class TicTacToeView {
     public void showNextMovePrompt() {
 
         /* Display a prompt for the player's next move (see examples) */
-		System.out.println("Enter Next Move. ");
-		System.out.print("Example Form for Your Move: ");
-		System.out.print("(0, 1)");
+		System.out.println(Mark " Move:");
+		System.out.print("Enter the row and column numbers, separated by a space: ");
         /* INSERT YOUR CODE HERE */
 
     }
@@ -37,7 +36,7 @@ public class TicTacToeView {
     public void showInputError() {
 
         /* Display an error if input is invalid (see examples) */
-
+		System.out.println("Invalid Coordinates. Try Another");
         /* INSERT YOUR CODE HERE */
 
     }
