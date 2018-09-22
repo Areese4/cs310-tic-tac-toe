@@ -17,9 +17,8 @@ public class TicTacToeController {
         this.model = model;
         this.view = view;
         
-        /* Initialize scanner (for console keyboard) */
-        
         keyboard = new Scanner(System.in);
+        
 
     }
 
@@ -29,13 +28,19 @@ public class TicTacToeController {
         
         view.showNextMovePrompt();
         
+        
         /* Receive and validate input, which should be read at the keyboard as
            two integers, the row and the column (for example, "1 1" for the
            center square of a 3 x 3 grid).  Make mark if input is valid, or show
            error message using view's showInputError() if input is invalid. */
         
-        /* INSERT YOUR CODE HERE */
+        int col = keyboard.nextInt();
+        int row = keyboard.nextInt();
         
+        if (model.makeMark(row, col) == true) {
+            
+        } else {
+            view.showInputError();
+        }
     }
-
 }
