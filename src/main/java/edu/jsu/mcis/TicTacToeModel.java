@@ -109,7 +109,7 @@ public class TicTacToeModel {
         
     }
 	
-    private boolean isValidSquare(int row, int col) {
+    public boolean isValidSquare(int row, int col) {
 
         /* Return true if specified location is within grid bounds */
         return (-1 < row) && (row < width) && (-1 < col) && (col < width);
